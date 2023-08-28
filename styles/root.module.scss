@@ -1,0 +1,129 @@
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--page-bg);
+}
+
+.header {
+    background-color: var(--slideshow-bg);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 14px;
+
+    h3,
+    h4 {
+        color: var(--text-secondary);
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+.navigation {
+    background-color: var(--bar-bg);
+    border-bottom: 1px solid var(--footer-border);
+}
+
+.panes {
+    display: flex;
+
+    p {
+        font-size: 14px;
+        padding: 0 22px;
+        margin: 8px 0;
+    }
+
+    .active {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: var(--slideshow-bg);
+        text-underline-offset: 9px;
+        text-decoration-thickness: 3px;
+    }
+}
+
+.options {
+    padding: 11px 22px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--bar-bg);
+    border-top: 1px solid var(--footer-border);
+
+    .group {
+        display: flex;
+        gap: 24px;
+        padding: 2.5px 0;
+    }
+
+    .group:first-of-type {
+        margin-left: 38px;
+    }
+
+    .group:last-of-type {
+        margin-right: 38px;
+    }
+
+    .group p {
+        color: var(--text-tertiary);
+        font-size: 14px;
+    }
+
+    .group svg {
+        fill: var(--text-tertiary);
+    }
+}
+
+.linkIcon {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .footer {
+        justify-content: center;
+
+        .group {
+            margin-left: 16px !important;
+            margin-right: 16px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+
+        .group:first-of-type {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer p {
+        display: flex;
+        align-items: center;
+        font-size: 10px !important;
+    }
+}
