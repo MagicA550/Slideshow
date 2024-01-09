@@ -4,6 +4,7 @@ import { GitHub } from "./footer/github"
 import { Twitter } from "./footer/twitter"
 import { LinkIcon } from "./footer/linkIcon"
 import { CurrentSlide } from "./footer/currentSlide"
+import { Mastodon } from "./footer/mastodon"
 
 /** The footer. */
 export const Footer = () => {
@@ -19,6 +20,12 @@ export const Footer = () => {
                 </LinkIcon>
                 <LinkIcon href="https://twitter.com/MagicA550">
                     <Twitter />
+                </LinkIcon>
+                <LinkIcon
+                    rel="me"
+                    href="https://bigrat.social/@anthony"
+                >
+                    <Mastodon />
                 </LinkIcon>
                 <p>hello (at) magicanthony.dev</p>
             </Group>
