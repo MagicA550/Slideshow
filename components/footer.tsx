@@ -21,10 +21,7 @@ export const Footer = () => {
                 <LinkIcon href="https://twitter.com/MagicA550">
                     <Twitter />
                 </LinkIcon>
-                <LinkIcon
-                    rel="me"
-                    href="https://bigrat.social/@anthony"
-                >
+                <LinkIcon rel="me" href="https://bigrat.social/@anthony">
                     <Mastodon />
                 </LinkIcon>
                 <p>hello (at) magicanthony.dev</p>
